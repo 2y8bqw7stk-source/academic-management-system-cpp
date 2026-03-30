@@ -1,7 +1,6 @@
 #ifndef MODULE_H
 #define MODULE_H
 
-#include <iostream>
 #include <string>
 #include <vector>
 #include "controle.h"
@@ -24,8 +23,8 @@ public:
     void ajouterResponsable(string nmp);
     float calculerMoyenne();
     void setcode(string c);
-	void setintitule(string i);
-	void setcoeff(float c);
+    void setintitule(string i);
+    void setcoeff(float c);
     vector<string> getResponsables();
 
 private:
@@ -37,4 +36,3 @@ private:
 };
 
 #endif
-
