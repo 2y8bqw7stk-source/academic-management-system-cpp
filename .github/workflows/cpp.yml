@@ -1,0 +1,31 @@
+name: C++ Build & Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout du code
+      uses: actions/checkout@v3
+
+    - name: Installer compilateur
+      run: sudo apt-get update && sudo apt-get install -y g++
+
+    - name: Compilation
+      run: |
+        g++ "Les Codes Sources"/*.cpp -o app
+
+    - name: Vérification exécution
+      run: |
+        if [ -f app ]; then
+          echo "Compilation OK"
+          ./app
+        else
+          echo "Erreur compilation"
+          exit 1
+        fi
