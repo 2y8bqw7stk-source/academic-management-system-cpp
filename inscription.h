@@ -2,7 +2,7 @@
 #define INSCRIPTION_H
 
 #include <vector>
-#include "module.h"
+#include "Module.h"
 #include "controle.h"
 using namespace std;
 

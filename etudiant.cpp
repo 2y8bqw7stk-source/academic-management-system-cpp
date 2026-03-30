@@ -112,7 +112,7 @@ void Etudiant::afficherEtudiantComplet()
         if(mg >= 10)
             cout << "Decision : Admis" << endl;
         else
-            cout << "Decision : Ajourné" << endl;
+            cout << "Decision : Ajournï¿½" << endl;
     }
 }
 float Etudiant::moyenneModule(string code)

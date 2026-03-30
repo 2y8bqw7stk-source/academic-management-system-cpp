@@ -7,7 +7,7 @@
 #include <string>
 #include <fstream>
 #include "etudiant.h"
-#include "module.h"
+#include "Module.h"
 
 using namespace std;
 
