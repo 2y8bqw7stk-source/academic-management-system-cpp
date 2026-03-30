@@ -1,5 +1,5 @@
-#ifndef Module.h
-#define Module.h
+#ifndef MODULE_H
+#define MODULE_H
 
 #include <iostream>
 #include <string>
